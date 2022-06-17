@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My page</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="page">
+    <!--шапка-->
+    <header class="page-header">
+        <div class="container main-nav ">
+        <nav class="main-nav" >
+            <a href="/" class="logo-top">
+                <span class="logo-web">Web</span><span class="logo-heder">Studio</span></a>
+            <ul class="site-nav list">
+                <li class="item-one"><a href="" class="link studio">Студия</a></li>
+                <li class="item-one"><a href="./portfolio.html" class="link portfolio">Портфолио</a></li>
+                <li class="item-one"><a href="" class="link we">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <ul class="auth-nav list ">
+            <li class="item-one">
+       
+                <a href="mailto:info@devstudio.com" class="auth-link link"><svg class="auth-link-icon-mail" widht="16" height="12">
+                    <use href="./img/symbola-defs.svg#icon-envelope-hover"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+            <li class="item-one">
+               
+                <a href="tel:+380961111111" class="auth-link link"><svg class="auth-link-icon phone" widht="10" height="16">
+                    <use href="./img/symbola-defs.svg#icon-telephon"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+        </div>
+    </header>
+    <main>
+
+        <!--блок герой-->
+
+        <section class="section">
+            <div class="container">
+            <h1 class="section-title">Эффективные решения для вашего бизнеса </h1>
+            
+            <button type="button" class="button-primary" data-modal-open>Заказать услугу</button>
+            
+            <div class="backdrop " data-modal is-hidden>
+                <div class="modal" >
+                <button type="button" class="close" data-modal-close> 
+                <svg class="primary-icon"  >
+                <use href="./img/symbola-defs.svg#icon-Close" ></use>
+            </svg></button>
+        <form  class="form" autocomplete="off">
+           <div class="request">
+            <p class="request-automatic">Оставьте свои данные, мы вам перезвоним</p>
+
+            <span class="request name"> <label class="indent" for="name"  placeholder="  ">Имя</label>
+                <input class="positioning" type="text" name="name" id="name" >
+                <svg class="name-icon"  >
+                    <use href="./img/symbola-defs.svg#person" ></use>
+                </svg>
+            </span>
+
+            <span class="request name"> <label class="indent" for="tel"  placeholder=" ">Телефон</label>
+                <input class="positioning" type="tel" name="name" id="tel">
+                <svg class="name-icon phone" widht="13" height="13" >
+                    <use href="./img/symbola-defs.svg#phone" ></use>
+                </svg>
+                
+            </span>
+
+            <span class="request name"><label class="indent" for="email"  placeholder=" ">Почта</label>
+                <input class="positioning" type="email" name="name" id="email" >
+                <svg class="name-icon mail" >
+                    <use href="./img/symbola-defs.svg#email" ></use>
+                </svg>
+              
+            </span>
+            
+            <span class="request comment" > 
+                <label class="comment-top" for="comment">Комментарий </label>
+                <textarea class="textarea-top" name="comment" id="comment" placeholder="Введите текст" ></textarea>
+                
+            </span>
+
+             <p class="request terms"> 
+                <input class="checkbox visually-hidden" type="checkbox" name="name" value="terms" id="terms" checked >
+                <svg class="checkbox-icon-term" >
+                    <use class="checkbox-icon-check" href="./img/symbola-defs.svg#icon-check"  checked  ></use>
+                </svg>
+               
+     
+                  <label  class="terms-top" for="terms">Соглашаюсь с рассылкой и принимаю <a href="" class="terms-top treaty">Условия договора</a></label>
+                 
+                </p>
+
+            
+
+            <button type="submit"  class="submit-button">Отправить</button>
+           </div> 
+            
+
+        </form></div></div>
+            
+        </div>
+
+        </section>
+
+        
+
+        <!--почему вибирают нас-->
+        
+        <section class="section-list">
+            <div class="container">
+            <ul class="content">
+                <li  class="item-choos">
+                    <div class="picture"><svg class="item-title-paragraph-icon">
+                    <use href="./img/symbola-defs.svg#icon-antenna-1"></use>
+                </svg></div>
+                    <h3 class="title">Внимание к деталям</h3>
+                    <p class="paragraph">
+                        Идейные соображения, а также начало повседневной работы по
+                        формированию позиции.
+                    </p>
+                </li>
+                <li class="item-choos">
+                    <div class="picture"><svg class="item-title-paragraph-icon" >
+                        <use href="./img/symbola-defs.svg#icon-clock-1"></use>
+                    </svg></div>
+                    <h3 class="title">Пунктуальность</h3>
+                    <p class="paragraph">
+                        Задача организации, в особенности же рамки и место обучения кадров
+                        влечет за собой.
+                    </p>
+                </li>
+                <li class="item-choos">
+                    <div class="picture"><svg class="item-title-paragraph-icon">
+                        <use href="./img/symbola-defs.svg#icon-diagram-1"></use>
+                    </svg></div>
+                    <h3 class="title">Планирование</h3>
+                    <p class="paragraph">
+                        Равным образом консультация с широким активом в значительной
+                        степени обуславливает.
+                    </p>
+                </li>
+                <li class="item-choos">
+                    <div class="picture"><svg class="item-title-paragraph-icon" >
+                        <use href="./img/symbola-defs.svg#icon-astronaut-1"></use>
+                    </svg></div>
+                    <h3 class="title">Современные технологии</h3>
+                    <p class="paragraph">
+                        Значимость этих проблем настолько очевидна, что реализация
+                        плановых заданий.
+                    </p>
+                </li>
+            </ul>
+        
+        </div>
+        </section>
+
+        <!--виды услуг-->
+        <section class="photo">
+            <div class="container">
+            <h2 class="photo-title">Чем мы занимаемся</h2>
+            
+            <ul class="img">
+        
+                
+                    
+                     <li class="img-work product-thumb">
+                        
+                    <img src="./img/img-min.png" alt=" веб разроботка "  width="370"  />
+                    
+                    <p class="work-text-card">Десктопные приложения</p>
+                </li>
+
+               
+                   <li class="img-work product-thumb development">
+                   <img src="./img/img(1)-min.png" alt="мобильная разробка"  />
+                    
+                    <p class="work-text-card">Мобильные приложения</p>
+                </li>
+
+               
+                    <li class="img-work product-thumb desingr" >
+                    <img src="./img/img(2)-min.png" alt="дизайн продукта"  />
+                    
+                     <p class="work-text-card">Дизайнерские решения</p>
+                    </li>
+            </ul>
+        </div>
+        </section>
+   
+        <!--наши специалисты-->
+        <section class="team">
+            <div class="container">
+            <h2 class="team-photo">Наша команда</h2>
+            <ul class="img-people">
+                <li class="photo-people">
+                    <img src="./img/img1.jpg" alt="фото нашого работника" width="270" />
+                   <div class="colleagues"> <h3 class="people">Игорь Демьяненко</h3>
+                    <p lang="en" class="paragraph">Product Designer</p>
+                    <ul class="people-paragraf list">
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link">
+                            <svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-instagram"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link">
+                            <svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-twitter"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link">
+                            <svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-facebook"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link">
+                            <svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                    </ul>
+                </div>
+                    
+                </li>
+                <li class="photo-people">
+                    <img src="./img/img2.jpg" alt="фото нашого работника" width="270" />
+                   <div class="colleagues"> <h3 class="people">Ольга Репина</h3>
+                    <p lang="en" class="paragraph">Frontend Developer</p>
+                    <ul class="people-paragraf list">
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-instagram"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-twitter"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-facebook"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                    </ul></div>
+                </li>
+                <li class="photo-people">
+                    <img src="./img/img3.jpg" alt="фото нашого работника" width="270" />
+                    <div class="colleagues"><h3 class="people">Николай Тарасов</h3>
+                    <p lang="en" class="paragraph">Marketing</p>
+                    <ul class="people-paragraf list">
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-instagram"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-twitter"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-facebook"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                    </ul></div>
+                </li>
+                <li class="photo-people">
+                    <img src="./img/img4.jpg" alt="фото нашого работника" width="270" />
+                   <div class="colleagues"> <h3 class="people">Михаил Ермаков</h3>
+                    <p lang="en" class="paragraph">UI Designer</p>
+                    <ul class="people-paragraf list">
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-instagram"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-twitter"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-facebook"></use>
+                            </svg></a></li>
+                        <li class="people-paragraf-item"><a href="" class="people-paragraf-link link"><svg class="people-paragraf-icon" widht="20" height="20">
+                                <use href="./img/symbola-defs.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                    </ul></div>
+                </li>
+            </ul>
+            
+        </div>
+        </section>
+        <section class="company-clients">
+            <div class="container">
+                <h2 class="company-title">Постоянные клиенты</h2>
+                    <ul class="company-title list">
+                        <li class="company-title-item">
+                            <a href="" class="company-link link">
+                                <svg class="company-icon" widht="170" height="92">
+                                    <use href=".//img/symbola-defs.svg#icon-Client-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-title-item">
+                            <a href="" class="company-link link">
+                                <svg class="company-icon" widht="170" height="92">
+                                    <use href=".//img/symbola-defs.svg#icon-Client-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-title-item">
+                            <a href="" class="company-link link">
+                                <svg class="company-icon" widht="170" height="92" >
+                                  <use href=".//img/symbola-defs.svg#icon-Client-3"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-title-item">
+                            <a href="" class="company-link link">
+                                <svg class="company-icon" widht="170" height="92" >
+                                    <use href=".//img/symbola-defs.svg#icon-Client-4"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-title-item">
+                            <a href="" class="company-link link">
+                                <svg class="company-icon" widht="170" height="92">
+                                    <use href=".//img/symbola-defs.svg#icon-Client-5"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="company-title-item">
+                            <a href="" class="company-link link">
+                                <svg class="company-icon" widht="170" height="92">
+                                    <use href=".//img/symbola-defs.svg#icon-Client-6-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                
+               
+            </div>
+        </section>
+    </main>
+
+    <!--как найти нас-->
+    <footer class="footer">
+        <div class="container footer-container">
+        <div class="footer-address-container">
+        <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+        <address>
+            <ul class="list">
+                <li class="footer-list">
+                    <a href="https://goo.gl/maps/zLNUuuCCSBXQonxw8"
+                    target="_blank"
+                    rel="nooener noreferrer" class="map link"
+                    >г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer-list">
+                    <a href="mailto:info@devstudio.com" class="contact-footer link">info@devstudio.com</a>
+                </li>
+                <li class="footer-list">
+                    <a href="tel:+380961111111" class="contact-footer link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+        </div>
+        <div class="footer-social-container">
+            <p class="footer-social-text">присоединяйтесь</p>
+            <ul class="list footer-social-list">
+                <li class="footer-social-item">
+                    <a href="" class="link footer-social-link">
+                        <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./img/symbola-defs.svg#icon-instagram">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="" class="link footer-social-link">
+                        <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./img/symbola-defs.svg#icon-twitter">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="" class="link footer-social-link">
+                        <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./img/symbola-defs.svg#icon-facebook">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="" class="link footer-social-link">
+                        <svg class="footer-social-icon" width="20" height="20">
+                            <use href="./img/symbola-defs.svg#icon-linkedin">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="footer-form-container">
+            <p class="footer-social-text">Подпишитесь на рассылку</p>
+            <form action="" class="footer-form-bid">
+           
+            <input class="footer-input" type="email" name="" id="email"  placeholder="E-mail">
+
+            <div class="footer-form-more" >
+                <button type="submit"  class="footer-button  ">
+                <svg class="footer-svg-icon" widht="20" height="20">
+                    <use href="./img/symbola-defs.svg#telegram"></use>
+                </svg>Подписаться</button>
+            </div>
+        </div> 
+        </form></div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>
