@@ -373,6 +373,7 @@ h3{
     
     background-color: var(--color-color);
     border-radius: 4px;
+    padding:40px ;
     
     
    
@@ -439,7 +440,7 @@ letter-spacing: 0.03em;
 
 color: #212121;
 margin-bottom: 12px;
-margin-top: 40px;
+
 
  }
 
@@ -467,14 +468,7 @@ display: block;
 
  }
 
- .form{
-   
-    margin-right: 40px;
-    margin-left: 40px;
-   
-    
 
- }
 
  .request.name{
 
